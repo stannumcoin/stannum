@@ -1,0 +1,67 @@
+#!/bin/bash
+#
+#  stannumd The Stannum Core server.
+#
+#
+# chkconfig: 345 80 20
+# description: stannumd
+# processname: stannumd
+#
+
+# Source function library.
+. /etc/init.d/functions
+
+# you can override defaults in /etc/sysconfig/stannumd, see below
+if [ -f /etc/sysconfig/stannumd ]; then
+        . /etc/sysconfig/stannumd
+fi
+
+RETVAL=0
+
+prog=stannumd
+# you can override the lockfile via BITCOIND_LOCKFILE in /etc/sysconfig/stannumd
+lockfile=${BITCOIND_LOCKFILE-/var/lock/subsys/stannumd}
+
+# stannumd defaults to /usr/bin/stannumd, override with BITCOIND_BIN
+stannumd=${BITCOIND_BIN-/usr/bin/stannumd}
+
+# stannumd opts default to -disablewallet, override with BITCOIND_OPTS
+stannumd_opts=${BITCOIND_OPTS--disablewallet}
+
+start() {
+    echo -n $"Starting $prog: "
+    daemon $DAEMONOPTS $stannumd $stannumd_opts
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && touch $lockfile
+    return $RETVAL
+}
+
+stop() {
+    echo -n $"Stopping $prog: "
+    killproc $prog
+    RETVAL=$?
+    echo
+    [ $RETVAL -eq 0 ] && rm -f $lockfile
+    return $RETVAL
+}
+
+case "$1" in
+    start)
+        start
+        ;;
+    stop)
+        stop
+        ;;
+    status)
+        status $prog
+        ;;
+    restart)
+        stop
+        start
+        ;;
+    *)
+        echo "Usage: service $prog {start|stop|status|restart}"
+        exit 1
+        ;;
+esac

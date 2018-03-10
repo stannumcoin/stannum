@@ -1,0 +1,11 @@
+[Protocol]
+exec=stannum-qt '%u'
+protocol=stannum
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

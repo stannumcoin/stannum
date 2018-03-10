@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/stannum_bg.qm</file>
+        <file alias="de">locale/stannum_de.qm</file>
+        <file alias="en">locale/stannum_en.qm</file>
+        <file alias="es">locale/stannum_es.qm</file>
+        <file alias="fi">locale/stannum_fi.qm</file>
+        <file alias="fr">locale/stannum_fr.qm</file>
+        <file alias="it">locale/stannum_it.qm</file>
+        <file alias="ja">locale/stannum_ja.qm</file>
+        <file alias="pl">locale/stannum_pl.qm</file>
+        <file alias="pt">locale/stannum_pt.qm</file>
+        <file alias="ru">locale/stannum_ru.qm</file>
+        <file alias="sk">locale/stannum_sk.qm</file>
+        <file alias="sv">locale/stannum_sv.qm</file>
+        <file alias="vi">locale/stannum_vi.qm</file>
+        <file alias="zh_CN">locale/stannum_zh_CN.qm</file>
+        <file alias="zh_TW">locale/stannum_zh_TW.qm</file>
+    </qresource>
+</RCC>

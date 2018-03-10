@@ -1,0 +1,6 @@
+usr/local/bin/stannum-qt usr/bin
+share/pixmaps/stannum32.xpm usr/share/pixmaps
+share/pixmaps/stannum16.xpm usr/share/pixmaps
+share/pixmaps/stannum128.png usr/share/pixmaps
+debian/stannum-qt.desktop usr/share/applications
+debian/stannum-qt.protocol usr/share/kde4/services/

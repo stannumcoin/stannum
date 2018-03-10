@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Stannum
+Comment=Stannum P2P Cryptocurrency
+Exec=stannum-qt %u
+Terminal=false
+Type=Application
+Icon=stannum128
+MimeType=x-scheme-handler/stannum;
+Categories=Office;Finance;
+Name[en_US]=stannum-qt.desktop
