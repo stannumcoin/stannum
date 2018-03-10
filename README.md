@@ -1,9 +1,9 @@
-Stannum Core staging tree 0.12.1
+Stannum Core staging tree 1.0.0.1
 ===============================
 
 `master:` [![Build Status](https://travis-ci.org/stannumcoin/stannum.svg?branch=master)](https://travis-ci.org/stannumcoin/stannum) `develop:` [![Build Status](https://travis-ci.org/stannumcoin/stannum.svg?branch=develop)](https://travis-ci.org/stannumcoin/stannum/branches)
 
-https://www.stannum.network
+http://stannumcoin.com/
 
 
 What is Stannum?
