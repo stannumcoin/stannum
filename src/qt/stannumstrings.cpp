@@ -113,7 +113,7 @@ QT_TRANSLATE_NOOP("stannum-core", ""
 "confirmation on average within n blocks (default: %u)"),
 QT_TRANSLATE_NOOP("stannum-core", ""
 "InstantSend doesn't support sending values that high yet. Transactions are "
-"currently limited to %1 GBX."),
+"currently limited to %1 SNC."),
 QT_TRANSLATE_NOOP("stannum-core", ""
 "InstantSend requires inputs with at least %d confirmations, you might need "
 "to wait a few minutes and try again."),
@@ -217,10 +217,10 @@ QT_TRANSLATE_NOOP("stannum-core", ""
 "Unable to locate enough PrivateSend denominated funds for this transaction."),
 QT_TRANSLATE_NOOP("stannum-core", ""
 "Unable to locate enough PrivateSend non-denominated funds for this "
-"transaction that are not equal 1000 GBX."),
+"transaction that are not equal 1000 SNC."),
 QT_TRANSLATE_NOOP("stannum-core", ""
 "Unable to locate enough funds for this transaction that are not equal 1000 "
-"GBX."),
+"SNC."),
 QT_TRANSLATE_NOOP("stannum-core", ""
 "Unsupported argument -socks found. Setting SOCKS version isn't possible "
 "anymore, only SOCKS5 proxies are supported."),
@@ -378,7 +378,7 @@ QT_TRANSLATE_NOOP("stannum-core", "Invalid port detected in masternode.conf"),
 QT_TRANSLATE_NOOP("stannum-core", "Invalid script detected."),
 QT_TRANSLATE_NOOP("stannum-core", "KeePassHttp id for the established association"),
 QT_TRANSLATE_NOOP("stannum-core", "KeePassHttp key for AES encrypted communication with KeePass"),
-QT_TRANSLATE_NOOP("stannum-core", "Keep N GBX anonymized (default: %u)"),
+QT_TRANSLATE_NOOP("stannum-core", "Keep N SNC anonymized (default: %u)"),
 QT_TRANSLATE_NOOP("stannum-core", "Keep at most <n> unconnectable transactions in memory (default: %u)"),
 QT_TRANSLATE_NOOP("stannum-core", "Keep the transaction memory pool below <n> megabytes (default: %u)"),
 QT_TRANSLATE_NOOP("stannum-core", "Last PrivateSend was too recent."),

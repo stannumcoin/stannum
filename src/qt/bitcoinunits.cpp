@@ -20,9 +20,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(GBX);
-    unitlist.append(mGBX);
-    unitlist.append(uGBX);
+    unitlist.append(SNC);
+    unitlist.append(mSNC);
+    unitlist.append(uSNC);
     unitlist.append(duffs);
     return unitlist;
 }
@@ -31,9 +31,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case GBX:
-    case mGBX:
-    case uGBX:
+    case SNC:
+    case mSNC:
+    case uSNC:
     case duffs:
         return true;
     default:
@@ -47,9 +47,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case GBX: return QString("GBX");
-            case mGBX: return QString("mGBX");
-            case uGBX: return QString::fromUtf8("μGBX");
+            case SNC: return QString("SNC");
+            case mSNC: return QString("mSNC");
+            case uSNC: return QString::fromUtf8("μSNC");
             case duffs: return QString("duffs");
             default: return QString("???");
         }
@@ -58,9 +58,9 @@ QString BitcoinUnits::name(int unit)
     {
         switch(unit)
         {
-            case GBX: return QString("tGBX");
-            case mGBX: return QString("mtGBX");
-            case uGBX: return QString::fromUtf8("μtGBX");
+            case SNC: return QString("tSNC");
+            case mSNC: return QString("mtSNC");
+            case uSNC: return QString::fromUtf8("μtSNC");
             case duffs: return QString("tduffs");
             default: return QString("???");
         }
@@ -73,9 +73,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case GBX: return QString("Stannum");
-            case mGBX: return QString("Milli-Stannum (1 / 1" THIN_SP_UTF8 "000)");
-            case uGBX: return QString("Micro-Stannum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case SNC: return QString("Stannum");
+            case mSNC: return QString("Milli-Stannum (1 / 1" THIN_SP_UTF8 "000)");
+            case uSNC: return QString("Micro-Stannum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-Stannum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -84,9 +84,9 @@ QString BitcoinUnits::description(int unit)
     {
         switch(unit)
         {
-            case GBX: return QString("TestStannums");
-            case mGBX: return QString("Milli-TestStannum (1 / 1" THIN_SP_UTF8 "000)");
-            case uGBX: return QString("Micro-TestStannum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+            case SNC: return QString("TestStannums");
+            case mSNC: return QString("Milli-TestStannum (1 / 1" THIN_SP_UTF8 "000)");
+            case uSNC: return QString("Micro-TestStannum (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             case duffs: return QString("Ten Nano-TestStannum (1 / 100" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
             default: return QString("???");
         }
@@ -97,9 +97,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case GBX:  return 100000000;
-    case mGBX: return 100000;
-    case uGBX: return 100;
+    case SNC:  return 100000000;
+    case mSNC: return 100000;
+    case uSNC: return 100;
     case duffs: return 1;
     default:   return 100000000;
     }
@@ -109,9 +109,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case GBX: return 8;
-    case mGBX: return 5;
-    case uGBX: return 2;
+    case SNC: return 8;
+    case mSNC: return 5;
+    case uSNC: return 2;
     case duffs: return 0;
     default: return 0;
     }

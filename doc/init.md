@@ -104,7 +104,7 @@ use old versions of Upstart and do not supply the start-stop-daemon utility.
 Copy stannumd.init to /etc/init.d/stannumd. Test by running `service stannumd start`.
 
 Using this script, you can adjust the path and flags to the stannumd program by
-setting the GBXD and FLAGS environment variables in the file
+setting the SNCD and FLAGS environment variables in the file
 /etc/sysconfig/stannumd. You can also use the DAEMONOPTS environment variable here.
 
 4e) Mac OS X

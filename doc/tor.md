@@ -1,4 +1,4 @@
-TOR SUPPORT IN GBX CORE
+TOR SUPPORT IN SNC CORE
 =======================
 
 It is possible to run Stannum Core as a Tor hidden service, and connect to such services.
