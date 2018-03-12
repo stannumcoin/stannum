@@ -1,4 +1,4 @@
-Stannum Core 0.12.1
+Stannum Core 1.0.0.1
 =====================
 
 This is the official reference wallet for Stannum digital currency and comprises the backbone of the Stannum peer-to-peer network. You can [download Stannum Core](https://www.stannum.org/downloads/) or [build it yourself](#building) using the guides below.
