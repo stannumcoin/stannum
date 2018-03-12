@@ -1,7 +1,7 @@
 Stannum Core 1.0.0.1
 =====================
 
-This is the official reference wallet for Stannum digital currency and comprises the backbone of the Stannum peer-to-peer network. You can [download Stannum Core](https://www.stannum.org/downloads/) or [build it yourself](#building) using the guides below.
+This is the official reference wallet for Stannum digital currency and comprises the backbone of the Stannum peer-to-peer network. You can [download Stannum Core](https://github.com/stannumcoin/stannum/releases/tag/done) or [build it yourself](#building) using the guides below.
 
 Running
 ---------------------
@@ -11,8 +11,8 @@ The following are some helpful notes on how to run Stannum on your native platfo
 
 Unpack the files into a directory and run:
 
-- `bin/bitcoin-qt` (GUI) or
-- `bin/bitcoind` (headless)
+- `bin/stannum-qt` (GUI) or
+- `bin/stannumd` (headless)
 
 ### Windows
 
